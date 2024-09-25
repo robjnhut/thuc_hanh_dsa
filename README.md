@@ -10,3 +10,15 @@ manage code practices
  7. Check if a Linked List is a Palindrome
  8. Write a function to search for nodes with the value X in the list. If found, return
  the addresses of the nodes; if not found, return NULL.
+## Problem part2
+
+1. Add Two Numbers
+ 2. Copy List with Random Pointers
+ 3. Swap Nodes in a Linked List
+ 4. Remove the N-th Node from the End of a List
+ 5. Separate Odd and Even Nodes in a Linked List
+ 6. Divide a Linked List into Parts
+ 7. Remove Zero-Sum Consecutive Nodes from a Linked List
+ 8. Write a function to input values for a list using the automatic input method, with
+ values selected from the range [-99; 99]. The number of entries is randomly chosen
+ from the range [39; 59] (using a function to insert at the end of the list) 
