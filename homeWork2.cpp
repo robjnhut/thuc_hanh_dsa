@@ -17,24 +17,24 @@ using namespace std;
             Node *tail;
         
         public:
-            browserHistory(string homePage){
+            browserHistory(string homePage){    // khởi tạo homepage
                 head = new Node(homePage);
                 current = head;
                 tail = head;
             }
 
             void visit(string newUrl){
-                Node *newNode = new Node(newUrl);
-                current ->next = newNode;
+                Node *newNode = new Node(newUrl);  // khởi tạo cho url mới
+                current ->next = newNode;// hai dòng kế để tao double linklist
                 newNode -> prev = current;
-                current = newNode;
+                current = newNode;   // cho url mới thành current
             }
                 //tao function back
             string back(int number){
                 if(current == head){
                     cout<< head ->url; // neu function dang ở vị trí browser thì in ra luôn
                 }else{
-                    while(current -> prev != nullptr && number > 0){
+                    while(current -> prev != nullptr && number > 0){ // điều kiện buoc nhay lớn hon 0 và trỏ tới browser thì in ra luon
                         current = current -> prev;       //chạy cho đến trước nó
                         number--;
                     }
@@ -43,10 +43,10 @@ using namespace std;
             }
 
             string forward(int number){
-                if(current == tail){
+                if(current == tail){// neu function dang ở vị trí đuôi thì in ra luôn
                     cout<< tail ->url;
                 }else{
-                    while(current ->next != nullptr && number > 0){
+                    while(current ->next != nullptr && number > 0){// điều kiện buoc nhay lớn hon 0 và trỏ tới cái đuôi hien tại thì in ra luon
                         current = current -> next;
                         number--;
                     }
@@ -72,9 +72,9 @@ int main(){
         if(nhapLenh == "visit"){
             string url;
             cout<<"nhap url: " << endl;
-            cin.ignore();
-            getline(cin,url);
-            browser.visit(url);
+            cin.ignore();// bỏ qua dấu cách
+            getline(cin,url); //lấy cả chuỗi
+            browser.visit(url);  // gọi hàm browser
             cout<< "null"<<endl;
         }else if (nhapLenh == "back") {
             int number;
