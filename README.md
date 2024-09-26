@@ -23,9 +23,9 @@ manage code môn dsa lớp thực hành
  values selected from the range [-99; 99]. The number of entries is randomly chosen
 
 ## Homework
- 1.Problem1: Music player
- 2.Problem2: Web Browser back and next
- 3.Problem3: AuthenticationManager Class
+ 1. Problem1: Music player
+ 2. Problem2: Web Browser back and next
+ 3. Problem3: AuthenticationManager Class
 
  
 
