@@ -104,28 +104,20 @@ int main(){
         }
         else if(enter == "renew"){
             string tokenId;
-            cout<<"nhap tokenId: " << endl;
-            cin.ignore();
-            
+            cout<<"nhap tokenId: " << endl; 
             getline(cin,tokenId);
+            
             int currentTime;
             cout<<"nhap currentTime: " << endl;
             cin>> currentTime;
             cin.ignore();
-
             auth.renewToken(tokenId,currentTime);
-                if(auth.countUnexpiredTokens(currentTime)){
-                    cout<<"TokenId moi la: " << tokenId <<endl;
-                    cout<<"expireTime: " << time + currentTime<<endl;
-                }else{
-                    cout<<"null"<<endl;
-                }
+            cout<<"null"<<endl;
         }
         else if(enter == "counttoken"){
            int currentTime;
            cout<<"Nhap currentTime: " ;
            cin>> currentTime;
-           cout << endl;
            cin.ignore();
             int count = auth.countUnexpiredTokens(currentTime);
             cout<<"so token con song la: "<<count <<endl;
