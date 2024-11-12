@@ -27,7 +27,6 @@ manage code môn dsa lớp thực hành
  2. Problem2: Web Browser back and next
  3. Problem3: AuthenticationManager Class
 
-
  ## lab2 part1
  
  Write a program to implement a stack using a singly linked list (or an array) to temporarily store
@@ -40,7 +39,6 @@ false.
 5. Write a function to pop an element from the stack.
 6. Print the TOP element of the stack.
 In the main function, write a menu to display the above choices.
-
 
 ## lab2 part2
 Write a program to implement a queue using a singly linked list (or an array) to temporarily store
